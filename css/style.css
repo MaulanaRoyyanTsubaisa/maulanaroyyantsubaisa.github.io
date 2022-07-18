@@ -1,0 +1,136 @@
+body, html {
+    font-family: 'Montserrat';
+}
+
+
+.bg-img {
+    background: url("../image/bg.jpg");
+    height: 92.4vh;
+
+    /* position: relative; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}    
+
+#welcome {
+    padding-top: 19rem;
+    font-family: 'Gloss And Bloom';
+    font-size: 10rem;
+}
+#kolomNama {
+    padding-top: 2rem;
+}
+
+#aboutMe {
+    /* padding: 50px; */
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.col-md-auto {
+    position: relative;
+    transition: 0.5s;
+}
+
+.col-md-auto:hover {
+    background: linear-gradient(black);
+    mix-blend-mode: multiply;
+    z-index: 1;
+    transform: scale(1.1);
+}
+
+
+.coba {
+    width: 300px !important;
+    box-shadow: 0px 0px 12px #6e6e6e;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.overlay:hover {
+    opacity: 1;
+    z-index: 1;
+}
+
+#portfolio {
+    background-color: #B6AFB7;
+    margin-bottom: 1rem;
+}
+
+.gridLayout {
+    position: relative;
+    box-shadow: 0 0 30px 8px rgb(77, 77, 77);
+    transition: 0.5s;
+}
+
+.gridLayout:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0px 0px 9px 8px rgb(77, 77, 77);
+}
+
+#contact_Me {
+    background-color: #B6AFB7;
+}
+
+.icon {
+    height: 20px;
+    margin-top: 3px;
+}
+
+footer .container-fluid {
+    background-color: black;
+}
+
+@media only screen and (min-width: 692px) {
+    #pictureAboutMe {
+        width: 200px !important;
+    }
+
+}
+
+@media only screen and ( max-width: 766px ) {
+    #portfolio {
+        /* display: flex; */
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    #welcome {
+        font-size: 4rem;
+    }
+    #aboutMe {
+        display: block !important;
+        overflow: hidden;
+    }
+
+  }
+
+@media only screen and (max-width: 400px) {
+    #namaSaya {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #deskripsi {
+        font-size: 13px;
+    }
+  }
